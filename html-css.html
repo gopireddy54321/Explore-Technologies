@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .sidenav {
+            width: 250px;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .sidenav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .topic-section {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .topic-section h2 {
+            color: #333;
+        }
+        .next-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 180px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#html-intro">HTML Intro</a>
+        <a href="#html-tags">HTML Tags</a>
+        <a href="#html-forms">Forms</a>
+        <a href="#css-intro">CSS Intro</a>
+        <a href="#css-selectors">CSS Selectors</a>
+        <a href="#css-box">Box Model</a>
+        <a href="#css-flex">Flexbox</a>
+        <a href="#css-grid">CSS Grid</a>
+    </div>
+
+    <div class="main-content">
+        <div id="html-intro" class="topic-section">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating webpages and web applications.</p>
+            <a href="#html-tags" class="next-button">Next: HTML Tags</a>
+        </div>
+
+        <div id="html-tags" class="topic-section">
+            <h2>HTML Tags</h2>
+            <p>HTML uses elements represented by tags like <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, etc., to structure content.</p>
+            <a href="#html-forms" class="next-button">Next: Forms</a>
+        </div>
+
+        <div id="html-forms" class="topic-section">
+            <h2>HTML Forms</h2>
+            <p>Forms are used to collect user input. Common elements include <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code>.</p>
+            <a href="#css-intro" class="next-button">Next: CSS Intro</a>
+        </div>
+
+        <div id="css-intro" class="topic-section">
+            <h2>Introduction to CSS</h2>
+            <p>CSS (Cascading Style Sheets) controls the presentation and layout of HTML elements on the screen.</p>
+            <a href="#css-selectors" class="next-button">Next: CSS Selectors</a>
+        </div>
+
+        <div id="css-selectors" class="topic-section">
+            <h2>CSS Selectors</h2>
+            <p>Selectors are used to target HTML elements. Examples: <code>p</code>, <code>#id</code>, <code>.class</code>, etc.</p>
+            <a href="#css-box" class="next-button">Next: Box Model</a>
+        </div>
+
+        <div id="css-box" class="topic-section">
+            <h2>CSS Box Model</h2>
+            <p>The box model consists of margins, borders, padding, and the actual content area. It defines how elements are sized and spaced.</p>
+            <a href="#css-flex" class="next-button">Next: Flexbox</a>
+        </div>
+
+        <div id="css-flex" class="topic-section">
+            <h2>CSS Flexbox</h2>
+            <p>Flexbox is a layout module that makes it easy to design flexible and responsive layout structures.</p>
+            <a href="#css-grid" class="next-button">Next: CSS Grid</a>
+        </div>
+
+        <div id="css-grid" class="topic-section">
+            <h2>CSS Grid</h2>
+            <p>CSS Grid Layout is a two-dimensional system for web layouts, allowing control over rows and columns simultaneously.</p>
+        </div>
+    </div>
+
+</body>
+</html>

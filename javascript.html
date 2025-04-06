@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .sidenav {
+            width: 250px;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .sidenav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .topic-section {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .topic-section h2 {
+            color: #333;
+        }
+        .next-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 180px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#intro">Introduction</a>
+        <a href="#syntax">Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#functions">Functions</a>
+        <a href="#loops">Loops</a>
+        <a href="#dom">DOM Manipulation</a>
+        <a href="#events">Events</a>
+        <a href="#advanced">Advanced JS</a>
+    </div>
+
+    <div class="main-content">
+        <div id="intro" class="topic-section">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a lightweight, interpreted scripting language used to make web pages interactive.</p>
+            <a href="#syntax" class="next-button">Next: Syntax</a>
+        </div>
+
+        <div id="syntax" class="topic-section">
+            <h2>JavaScript Syntax</h2>
+            <p>JavaScript syntax is the set of rules that define a correctly structured program. Statements end with semicolons, and blocks are enclosed in curly braces.</p>
+            <a href="#variables" class="next-button">Next: Variables</a>
+        </div>
+
+        <div id="variables" class="topic-section">
+            <h2>Variables</h2>
+            <p>JavaScript variables can be declared using <code>var</code>, <code>let</code>, or <code>const</code>. The <code>let</code> and <code>const</code> keywords were introduced in ES6.</p>
+            <a href="#functions" class="next-button">Next: Functions</a>
+        </div>
+
+        <div id="functions" class="topic-section">
+            <h2>Functions</h2>
+            <p>Functions in JavaScript are blocks of code designed to perform a particular task. They can be declared or expressed as variables.</p>
+            <a href="#loops" class="next-button">Next: Loops</a>
+        </div>
+
+        <div id="loops" class="topic-section">
+            <h2>Loops</h2>
+            <p>JavaScript supports <code>for</code>, <code>while</code>, and <code>do...while</code> loops to execute blocks of code repeatedly.</p>
+            <a href="#dom" class="next-button">Next: DOM Manipulation</a>
+        </div>
+
+        <div id="dom" class="topic-section">
+            <h2>DOM Manipulation</h2>
+            <p>The Document Object Model (DOM) represents the structure of a webpage. JavaScript can be used to select and modify DOM elements.</p>
+            <a href="#events" class="next-button">Next: Events</a>
+        </div>
+
+        <div id="events" class="topic-section">
+            <h2>JavaScript Events</h2>
+            <p>Events are actions that happen in the browser, like clicks and key presses. JavaScript can handle these using event listeners.</p>
+            <a href="#advanced" class="next-button">Next: Advanced JS</a>
+        </div>
+
+        <div id="advanced" class="topic-section">
+            <h2>Advanced JavaScript</h2>
+            <p>This section includes ES6+ features, asynchronous programming (Promises, async/await), closures, and more.</p>
+        </div>
+    </div>
+
+</body>
+</html>

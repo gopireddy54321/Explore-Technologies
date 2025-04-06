@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .sidenav {
+            width: 250px;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .sidenav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .topic-section {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .topic-section h2 {
+            color: #333;
+        }
+        .next-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 180px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#intro">What is MongoDB?</a>
+        <a href="#nosql">NoSQL Basics</a>
+        <a href="#setup">Setup</a>
+        <a href="#crud">CRUD Operations</a>
+        <a href="#schema">Schemas</a>
+        <a href="#queries">Querying Data</a>
+        <a href="#mongoose">Mongoose</a>
+        <a href="#relations">Relations</a>
+    </div>
+
+    <div class="main-content">
+        <div id="intro" class="topic-section">
+            <h2>What is MongoDB?</h2>
+            <p>MongoDB is a NoSQL, document-oriented database that stores data in flexible, JSON-like documents.</p>
+            <a href="#nosql" class="next-button">Next: NoSQL Basics</a>
+        </div>
+
+        <div id="nosql" class="topic-section">
+            <h2>NoSQL Basics</h2>
+            <p>NoSQL databases are non-relational and scale horizontally. They are great for flexible and large-scale data storage.</p>
+            <a href="#setup" class="next-button">Next: Setup</a>
+        </div>
+
+        <div id="setup" class="topic-section">
+            <h2>Setup</h2>
+            <p>You can install MongoDB locally or use cloud services like MongoDB Atlas. Use <code>mongo</code> shell or Compass for GUI access.</p>
+            <a href="#crud" class="next-button">Next: CRUD Operations</a>
+        </div>
+
+        <div id="crud" class="topic-section">
+            <h2>CRUD Operations</h2>
+            <p>CRUD stands for Create, Read, Update, Delete. MongoDB provides methods like <code>insertOne()</code>, <code>find()</code>, <code>updateOne()</code>, and <code>deleteOne()</code>.</p>
+            <a href="#schema" class="next-button">Next: Schemas</a>
+        </div>
+
+        <div id="schema" class="topic-section">
+            <h2>Schemas</h2>
+            <p>MongoDB is schema-less by default, but using Mongoose you can define schemas to enforce structure in your documents.</p>
+            <a href="#queries" class="next-button">Next: Querying Data</a>
+        </div>
+
+        <div id="queries" class="topic-section">
+            <h2>Querying Data</h2>
+            <p>You can query documents using various conditions with operators like <code>$gt</code>, <code>$in</code>, <code>$and</code>, etc.</p>
+            <a href="#mongoose" class="next-button">Next: Mongoose</a>
+        </div>
+
+        <div id="mongoose" class="topic-section">
+            <h2>Mongoose</h2>
+            <p>Mongoose is an ODM (Object Data Modeling) library for MongoDB and Node.js. It helps you define models and handle validation.</p>
+            <a href="#relations" class="next-button">Next: Relations</a>
+        </div>
+
+        <div id="relations" class="topic-section">
+            <h2>Relations</h2>
+            <p>Even in a NoSQL database like MongoDB, you can create relationships using embedded documents or referencing ObjectIds.</p>
+        </div>
+    </div>
+
+</body>
+</html>

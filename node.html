@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .sidenav {
+            width: 250px;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .sidenav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .topic-section {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .topic-section h2 {
+            color: #333;
+        }
+        .next-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 180px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#intro">What is Node.js?</a>
+        <a href="#setup">Setup</a>
+        <a href="#modules">Modules</a>
+        <a href="#fs">File System</a>
+        <a href="#http">HTTP Module</a>
+        <a href="#npm">NPM</a>
+        <a href="#express">Express.js</a>
+        <a href="#api">Building APIs</a>
+    </div>
+
+    <div class="main-content">
+        <div id="intro" class="topic-section">
+            <h2>What is Node.js?</h2>
+            <p>Node.js is a runtime environment that lets you run JavaScript on the server side. It's built on Chrome's V8 engine.</p>
+            <a href="#setup" class="next-button">Next: Setup</a>
+        </div>
+
+        <div id="setup" class="topic-section">
+            <h2>Node.js Setup</h2>
+            <p>Install Node.js from the official website or using a package manager like <code>nvm</code>. Use <code>node</code> and <code>npm</code> in terminal to get started.</p>
+            <a href="#modules" class="next-button">Next: Modules</a>
+        </div>
+
+        <div id="modules" class="topic-section">
+            <h2>Modules in Node.js</h2>
+            <p>Modules allow you to split your code into reusable pieces. Use <code>require()</code> to include them.</p>
+            <a href="#fs" class="next-button">Next: File System</a>
+        </div>
+
+        <div id="fs" class="topic-section">
+            <h2>File System Module</h2>
+            <p>Node's <code>fs</code> module lets you work with the file system. You can read, write, and delete files asynchronously or synchronously.</p>
+            <a href="#http" class="next-button">Next: HTTP Module</a>
+        </div>
+
+        <div id="http" class="topic-section">
+            <h2>HTTP Module</h2>
+            <p>The built-in <code>http</code> module is used to create web servers and handle HTTP requests and responses.</p>
+            <a href="#npm" class="next-button">Next: NPM</a>
+        </div>
+
+        <div id="npm" class="topic-section">
+            <h2>NPM (Node Package Manager)</h2>
+            <p>NPM is used to install, manage, and share Node.js packages. Example: <code>npm install express</code>.</p>
+            <a href="#express" class="next-button">Next: Express.js</a>
+        </div>
+
+        <div id="express" class="topic-section">
+            <h2>Express.js</h2>
+            <p>Express is a minimal web framework for Node.js. It simplifies routing and middleware handling.</p>
+            <a href="#api" class="next-button">Next: Building APIs</a>
+        </div>
+
+        <div id="api" class="topic-section">
+            <h2>Building APIs</h2>
+            <p>Use Express to create RESTful APIs with endpoints to handle different HTTP methods like GET, POST, PUT, and DELETE.</p>
+        </div>
+    </div>
+
+</body>
+</html>
