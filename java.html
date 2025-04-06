@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        /* Side navigation */
+        .sidenav {
+            width: 250px;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .sidenav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .topic-section {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .topic-section h2 {
+            color: #333;
+        }
+        .next-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 150px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Side Navigation Bar -->
+    <div class="sidenav">
+        <a href="#intro">Introduction</a>
+        <a href="#variables">Variables</a>
+        <a href="#loops">Loops</a>
+        <a href="#arrays">Arrays</a>
+        <a href="#classes">Classes</a>
+        <a href="#exceptions">Exceptions</a>
+        <a href="#file-io">File I/O</a>
+        <a href="#advanced">Advanced Java</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div id="intro" class="topic-section">
+            <h2>Introduction to Java</h2>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+            <a href="#variables" class="next-button">Next: Variables</a>
+        </div>
+
+        <div id="variables" class="topic-section">
+            <h2>Java Variables</h2>
+            <p>In Java, a variable is a container for storing data values. Each variable must be declared with a data type.</p>
+            <a href="#loops" class="next-button">Next: Loops</a>
+        </div>
+
+        <div id="loops" class="topic-section">
+            <h2>Loops in Java</h2>
+            <p>Java provides different types of loops for repeating code: for, while, and do-while loops.</p>
+            <a href="#arrays" class="next-button">Next: Arrays</a>
+        </div>
+
+        <div id="arrays" class="topic-section">
+            <h2>Java Arrays</h2>
+            <p>An array is a data structure that holds multiple values of the same type in a single variable.</p>
+            <a href="#classes" class="next-button">Next: Classes</a>
+        </div>
+
+        <div id="classes" class="topic-section">
+            <h2>Java Classes</h2>
+            <p>A class in Java is a blueprint from which individual objects are created. It can contain fields (variables) and methods (functions).</p>
+            <a href="#exceptions" class="next-button">Next: Exceptions</a>
+        </div>
+
+        <div id="exceptions" class="topic-section">
+            <h2>Java Exceptions</h2>
+            <p>Exceptions are events that disrupt the normal flow of the program. Java provides mechanisms to handle exceptions using try-catch blocks.</p>
+            <a href="#file-io" class="next-button">Next: File I/O</a>
+        </div>
+
+        <div id="file-io" class="topic-section">
+            <h2>Java File I/O</h2>
+            <p>File I/O (Input/Output) is used for reading from and writing to files. Java provides several classes for file handling.</p>
+            <a href="#advanced" class="next-button">Next: Advanced Java</a>
+        </div>
+
+        <div id="advanced" class="topic-section">
+            <h2>Advanced Java Topics</h2>
+            <p>This section covers more advanced concepts like multi-threading, networking, and Java frameworks.</p>
+        </div>
+    </div>
+
+</body>
+</html>

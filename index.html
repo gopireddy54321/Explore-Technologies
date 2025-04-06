@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech World - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .category-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-card h3 {
+            color: #333;
+        }
+
+        .category-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Tech World - Explore Technologies</h1>
+        <p>Your gateway to software, programming languages, tools, and more!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Explore Technologies</h2>
+        <p>Click on any technology below to learn more about it.</p>
+
+        <div class="categories">
+            <!-- Technology Category Cards -->
+            <div class="category-card">
+                <h3>Java</h3>
+                <a href="java.html">Learn Java</a>
+            </div>
+            <div class="category-card">
+                <h3>Python</h3>
+                <a href="#">Learn Python</a>
+            </div>
+            <div class="category-card">
+                <h3>JavaScript</h3>
+                <a href="#">Learn JavaScript</a>
+            </div>
+            <div class="category-card">
+                <h3>HTML/CSS</h3>
+                <a href="#">Learn HTML/CSS</a>
+            </div>
+            <div class="category-card">
+                <h3>Node.js</h3>
+                <a href="#">Learn Node.js</a>
+            </div>
+            <div class="category-card">
+                <h3>React</h3>
+                <a href="#">Learn React</a>
+            </div>
+            <div class="category-card">
+                <h3>Git</h3>
+                <a href="#">Learn Git</a>
+            </div>
+            <div class="category-card">
+                <h3>SQL</h3>
+                <a href="#">Learn SQL</a>
+            </div>
+            <div class="category-card">
+                <h3>Docker</h3>
+                <a href="#">Learn Docker</a>
+            </div>
+            <div class="category-card">
+                <h3>Linux</h3>
+                <a href="#">Learn Linux</a>
+            </div>
+            <div class="category-card">
+                <h3>Apache</h3>
+                <a href="#">Learn Apache</a>
+            </div>
+            <div class="category-card">
+                <h3>Nginx</h3>
+                <a href="#">Learn Nginx</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Tech World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
